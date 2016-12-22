@@ -1,0 +1,20 @@
+// A Java program that accepts a value, calculates the square of that value, and outputs the result.
+
+import java.io.*;
+
+class SquareIt {
+  public static void main (String args[]) throws IOException
+  {
+  int num, square;
+  
+  System.out.print ("Enter an integer value: ");
+  System.out.flush();   // Clear buffer before reading.
+  
+  num = System.in.read();
+  num = num - '0';      // Change character input to integer.
+  
+  square = num*num;
+  
+  System.out.println ("Your value: " + num + " squared is: " + square);
+  }
+}
